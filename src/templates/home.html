@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block head_title %}  {{ page_title }} - {{ block.super }} {% endblock head_title %}
+ 
+
+{% block content %}
+
+<h1>{{ page_title }}</h1>
+
+<p>Helle aga!</p>
+
+{% include 'snippets/welcome-user-msg.html' %}
+
+{% endblock content %}
